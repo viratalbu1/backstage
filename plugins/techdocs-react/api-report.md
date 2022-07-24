@@ -26,14 +26,18 @@ export function createTechDocsAddonExtension<TComponentProps>(
   options: TechDocsAddonOptions<TComponentProps>,
 ): Extension<(props: TComponentProps) => JSX.Element | null>;
 
-// @public
-export const SHADOW_DOM_STYLE_LOAD_EVENT = 'TECH_DOCS_SHADOW_DOM_STYLE_LOAD';
+// @public @deprecated
+export const SHADOW_DOM_STYLE_LOAD_EVENT = 'TECHDOCS_SHADOW_DOM_STYLE_LOAD';
 
 // @public
 export type SyncResult = 'cached' | 'updated';
 
 // @public
 export const TECHDOCS_ADDONS_WRAPPER_KEY = 'techdocs.addons.wrapper.v1';
+
+// @public
+export const TECHDOCS_SHADOW_DOM_STYLE_LOAD_EVENT =
+  'TECHDOCS_SHADOW_DOM_STYLE_LOAD';
 
 // @public
 export const TechDocsAddonLocations: Readonly<{
@@ -204,20 +208,17 @@ export function toLowercaseEntityRefMaybe(
   config: Config,
 ): CompoundEntityRef;
 
-// @public
+// @public @deprecated
 export const useShadowDomStylesLoading: (element: Element | null) => boolean;
 
-// @public
-export const useShadowRoot: () => ShadowRoot | undefined;
-
-// @public
+// @public @deprecated
 export const useShadowRootElements: <
   TReturnedElement extends HTMLElement = HTMLElement,
 >(
   selectors: string[],
 ) => TReturnedElement[];
 
-// @public
+// @public @deprecated
 export const useShadowRootSelection: (wait?: number) => Selection | null;
 
 // @public
@@ -233,6 +234,25 @@ export const useTechDocsReaderPage: () => TechDocsReaderPageValue;
 
 // @public
 export const useTechDocsReaderPageContent: () => TechDocsReaderPageContentState;
+
+// @public
+export const useTechDocsShadowDomStylesLoading: (
+  element: Element | null,
+) => boolean;
+
+// @public
+export const useTechDocsShadowRootElements: <
+  TReturnedElement extends HTMLElement = HTMLElement,
+>(
+  selectors: string[],
+  shadowRoot?: ShadowRoot,
+) => TReturnedElement[];
+
+// @public
+export const useTechDocsShadowRootSelection: (
+  wait?: number,
+  shadowRoot?: ShadowRoot,
+) => Selection | null;
 
 // @public
 export const withTechDocsReaderPageContentProvider: <T extends {}>(
