@@ -1,5 +1,17 @@
 # @backstage/plugin-scaffolder
 
+## 1.5.0-next.1
+
+### Minor Changes
+
+- c4b452e16a: Starting the implementation of the Wizard page for the `next` scaffolder plugin
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/core-components@0.10.1-next.1
+  - @backstage/integration@1.3.0-next.1
+
 ## 1.4.1-next.0
 
 ### Patch Changes

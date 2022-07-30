@@ -1,5 +1,11 @@
 # @backstage/integration
 
+## 1.3.0-next.1
+
+### Minor Changes
+
+- ad35364e97: feat(techdocs): add edit button support for bitbucketServer
+
 ## 1.3.0-next.0
 
 ### Minor Changes

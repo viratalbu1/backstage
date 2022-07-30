@@ -1,5 +1,16 @@
 # @backstage/plugin-catalog
 
+## 1.5.0-next.1
+
+### Minor Changes
+
+- fe94398418: Allow changing the subtitle of the `CatalogTable` component
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/core-components@0.10.1-next.1
+
 ## 1.5.0-next.0
 
 ### Minor Changes

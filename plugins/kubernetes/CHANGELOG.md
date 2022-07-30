@@ -1,5 +1,13 @@
 # @backstage/plugin-kubernetes
 
+## 0.7.1-next.1
+
+### Patch Changes
+
+- 860ed68343: Fixed bug in CronJobsAccordions component that causes an error when cronjobs use a kubernetes alias, such as `@hourly` or `@daily` instead of standard cron syntax.
+- Updated dependencies
+  - @backstage/core-components@0.10.1-next.1
+
 ## 0.7.1-next.0
 
 ### Patch Changes
